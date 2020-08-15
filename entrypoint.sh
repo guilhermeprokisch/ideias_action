@@ -9,11 +9,10 @@ git pull https://${GH_PAT}@github.com/$OWNER/$REPO_NAME.git
 FILES=$(find '.' -maxdepth 1 -type f -name '*.md' -execdir basename '{}' ';')
 for i in $FILES; do
         for j in $FILES; do
-                echo $i
                 if grep -q "\[Zettel\](Zettel)\|[[Zettel]]" $i; then
-                       echo found
+                       echo $j
                 else
-                        echo not found
+                        echo ''
                 fi
         done
         cp "$i" "./.backlinks/"
