@@ -1,0 +1,9 @@
+name: Ideias action
+author: Guilherme Prokisch <guilherme@prokis.ch>
+description: TODO
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: tag
+  color: blue
