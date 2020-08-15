@@ -11,7 +11,7 @@ for i in $FILES; do
         for j in $FILES; do
                 if grep -q "\[${i%.md}\](${i%.md})\|[[${i}]]" $j; then
                         echo "${j%.md} -> ${i%.md}" 
-                        echo "${j%.md} >> ./backlinks/${i%.md}"
+                        echo ${j%.md} >> ./.backlinks/${i%.md}
                 fi
         done
         #cp "$i" "./.backlinks/"
