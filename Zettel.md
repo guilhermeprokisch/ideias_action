@@ -1,5 +1,3 @@
 
-H
-
-ome
+Home
 
