@@ -18,7 +18,6 @@ for i in $FILES; do
                         fi
                 fi
         done
-        #cp "$i" "./.backlinks/"
 done
 
 git add .
