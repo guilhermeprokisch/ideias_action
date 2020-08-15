@@ -14,7 +14,7 @@ for i in $FILES; do
                         echo "${j%.md} >> ./backlinks/${i%.md}"
                 fi
         done
-        cp "$i" "./.backlinks/"
+        #cp "$i" "./.backlinks/"
 done
 
 git add .
