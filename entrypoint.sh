@@ -6,6 +6,6 @@ for i in $FILES; do
 done
 
 git add .
-git commit -m 'backlink action'
-git push --set-upstream https://guilhermeprokisch@github.com/guilhermeprokisch/ideias.wiki.git master
-git push --set-upstream https://guilhermeprokisch@github.com/guilhermeprokisch/ideias.git master
+git commit -m 'Backlinks action'
+git push --set-upstream https://${GH_PAT}@github.com/guilhermeprokisch/ideias.wiki.git master
+git push --set-upstream https://${GH_PAT}@github.com/guilhermeprokisch/ideias.git master
