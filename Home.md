@@ -1,4 +1,0 @@
-[conceito](conceito)
-
-[Zettel](Zettel)
-
