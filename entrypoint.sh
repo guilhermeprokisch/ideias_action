@@ -10,9 +10,7 @@ FILES=$(find '.' -maxdepth 1 -type f -name '*.md' -execdir basename '{}' ';')
 for i in $FILES; do
         for j in $FILES; do
                 if grep -q "\[${i%.md}\](${i%.md})\|[[${i}]]" $j; then
-                       echo $j
-                else
-                       echo ''
+                       echo ${j%.md} -> ${i%.md} 
                 fi
         done
         cp "$i" "./.backlinks/"
