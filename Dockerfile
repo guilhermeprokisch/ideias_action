@@ -7,8 +7,10 @@ LABEL "com.github.actions.icon"="book-open"
 LABEL "com.github.actions.color"="black"
 
 RUN apk add --no-cache bash findutils
-COPY entrypoint.sh /
-COPY backlinks.sh /
+
+COPY backlinks.sh entrypoint.sh /
+
+RUN ls
 RUN chmod +x /entrypoint.sh
 RUN chmod +x /backlinks.sh
 
