@@ -8,6 +8,7 @@ LABEL "com.github.actions.color"="black"
 
 RUN apk add --no-cache bash findutils
 COPY entrypoint.sh /
+COPY backlinks.sh /
 RUN chmod +x /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
