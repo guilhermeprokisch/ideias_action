@@ -22,6 +22,10 @@ done
 
 git add .
 git commit -m 'Backlinks action'
-git push --set-upstream https://${GH_PAT}@github.com/$OWNER/$REPO_NAME.wiki.git master
 git push --set-upstream https://${GH_PAT}@github.com/$OWNER/$REPO_NAME.git master
+
+rm README.md
+git add .
+git commit -m 'ignore file to wiki'
+git push --set-upstream https://${GH_PAT}@github.com/$OWNER/$REPO_NAME.wiki.git master
 
