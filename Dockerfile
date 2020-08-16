@@ -10,5 +10,6 @@ RUN apk add --no-cache bash findutils
 COPY entrypoint.sh /
 COPY backlinks.sh /
 RUN chmod +x /entrypoint.sh
+RUN chmod +x /backlinks.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
