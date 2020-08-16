@@ -1,7 +1,7 @@
 #!/bin/bash
 #source "./backlinks.sh"
 
-function backlinks {
+function do_backlinks {
 
         for i in *.md; do
                 for j in *.md; do
@@ -23,7 +23,7 @@ git pull https://${GH_PAT}@github.com/$OWNER/$REPO_NAME.git
 mkdir .backlinks
 rm README.md
 
-backlinks
+do_backlinks
 
 git add .
 git commit -m 'created backlinks'
