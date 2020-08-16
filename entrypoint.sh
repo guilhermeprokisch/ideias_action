@@ -1,5 +1,5 @@
 #!/bin/bash
-source ./backlinks.sh
+source "./backlinks.sh"
 
 git init
 git config user.name $ACTION_NAME
